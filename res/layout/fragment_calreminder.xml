@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/box_margin" android:layout_marginBottom="@dimen/box_margin">
+        <TextView android:textSize="@dimen/medium_text" android:textStyle="italic" android:textColor="@color/detail_font_color" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/box_margin" android:text="@string/calibration_reminders_description" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/box_margin" android:layout_marginEnd="@dimen/box_margin">
+        <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/reminder1TextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/reminder_1" android:layout_toStartOf="@id/reminder1Switch" android:layout_alignParentStart="true" />
+            <Switch android:gravity="center" android:id="@id/reminder1Switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" android:paddingStart="@dimen/small_margin" android:paddingEnd="@dimen/small_margin" />
+            <RelativeLayout android:id="@id/reminder1TimeLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toEndOf="@id/reminder1Switch" android:layout_alignParentEnd="true">
+                <TextView android:textSize="@dimen/large_text" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/reminder1TimeTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow1" />
+                <ImageView android:id="@id/arrow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_item_arrow" android:layout_centerVertical="true" android:layout_marginStart="@dimen/event_box_text_margin" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/gray_horizontal_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/reminder2TextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/reminder_2" android:layout_toStartOf="@id/reminder2Switch" android:layout_alignParentStart="true" />
+            <Switch android:gravity="center" android:id="@id/reminder2Switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" android:paddingStart="@dimen/small_margin" android:paddingEnd="@dimen/small_margin" />
+            <RelativeLayout android:id="@id/reminder2TimeLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toEndOf="@id/reminder2Switch" android:layout_alignParentEnd="true">
+                <TextView android:textSize="@dimen/large_text" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/reminder2TimeTextView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_toStartOf="@id/arrow2" />
+                <ImageView android:id="@id/arrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/list_item_arrow" android:layout_centerVertical="true" android:layout_marginStart="@dimen/event_box_text_margin" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

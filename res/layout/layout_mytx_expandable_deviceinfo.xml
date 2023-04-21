@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/box_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/header_section" android:padding="@dimen/event_box_text_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Widget.Holo.Button.Borderless">
+        <TextView android:textSize="@dimen/large_text" android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/device_info" android:layout_toStartOf="@id/arrowOpenClose" />
+        <ImageView android:id="@id/arrowOpenClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_table_close" android:layout_centerVertical="true" android:layout_marginStart="@dimen/box_margin" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/body_section" android:background="@android:color/white" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <RelativeLayout android:padding="@dimen/event_box_text_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/nameText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name" android:layout_centerVertical="true" android:layout_toStartOf="@id/name" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/gray_horizontal_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/small_margin" android:layout_marginEnd="@dimen/small_margin" />
+        <RelativeLayout android:padding="@dimen/event_box_text_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/serialNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/serial_number" android:layout_centerVertical="true" android:layout_toStartOf="@id/serialNumber" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/serialNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/gray_horizontal_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/small_margin" android:layout_marginEnd="@dimen/small_margin" />
+        <RelativeLayout android:padding="@dimen/event_box_text_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/modelNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/model_number" android:layout_centerVertical="true" android:layout_toStartOf="@id/modelNumber" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/modelNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/gray_horizontal_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/small_margin" android:layout_marginEnd="@dimen/small_margin" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/event_box_text_margin" android:paddingEnd="@dimen/event_box_text_margin" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/firmwareVersionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_number" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/fwUpdateImageView" android:padding="@dimen/small_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_centerVertical="true" android:layout_toEndOf="@id/firmwareVersionText" />
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/firmwareVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/gray_horizontal_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/small_margin" android:layout_marginEnd="@dimen/small_margin" />
+        <RelativeLayout android:id="@id/rssiLayout" android:padding="@dimen/event_box_text_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/rssiText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rssi_value" android:layout_centerVertical="true" android:layout_toStartOf="@id/rssi" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/rssi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:id="@id/rssiLayoutDivider" android:background="@color/gray_horizontal_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/small_margin" android:layout_marginEnd="@dimen/small_margin" />
+        <RelativeLayout android:padding="@dimen/event_box_text_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/batteryLevelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/battery_level" android:layout_centerVertical="true" android:layout_toStartOf="@id/batteryLevel" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/batteryLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

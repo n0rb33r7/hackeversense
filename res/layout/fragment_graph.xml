@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/graph_parent" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/top_layout" android:background="@color/graph_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/glucose_value_display" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/glucose_value_display" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/graph_manager_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ImageButton android:id="@id/expandImageButton" android:background="@null" android:paddingTop="@dimen/rotation_button_padding_top_left" android:paddingBottom="@dimen/rotation_button_padding_bottom_right" android:layout_width="@dimen/rotation_button_size" android:layout_height="@dimen/rotation_button_size" android:src="@drawable/ic_expand" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:paddingStart="@dimen/rotation_button_padding_top_left" android:paddingEnd="@dimen/rotation_button_padding_bottom_right" android:layout_alignParentEnd="true" />
+</RelativeLayout>

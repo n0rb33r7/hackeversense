@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/my_transmitter_expandable_layout" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/deviceInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/box_margin" layout="@layout/layout_mytx_expandable_deviceinfo" />
+            <include android:id="@id/calInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/box_margin" layout="@layout/layout_mytx_expandable_calinfo" />
+            <include android:id="@id/demoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/box_margin" layout="@layout/layout_mytx_expandable_demo" />
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/box_margin" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

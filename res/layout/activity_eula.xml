@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/topBar" android:paddingBottom="@dimen/box_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomBar" android:layout_marginStart="@dimen/box_margin" android:layout_marginEnd="@dimen/box_margin">
+        <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/eula_topText" android:paddingTop="@dimen/box_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/eula" />
+        <RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/box_margin">
+            <WebView android:id="@id/webView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottomBar" android:paddingBottom="@dimen/box_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/box_margin" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/confirmLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/box_margin" android:layout_marginStart="@dimen/box_margin" android:layout_marginEnd="@dimen/box_margin">
+            <TextView android:textSize="@dimen/medium_text" android:textColor="@color/black" android:gravity="center_horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="@string/eula_confirmation_text_3" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/cancel" android:background="@drawable/diaglue_btn_up" android:layout_width="140.0dip" android:layout_height="35.0dip" android:text="@string/cancel" android:layout_weight="1.0" android:textAlignment="center" android:layout_marginStart="@dimen/large_margin" android:layout_marginEnd="@dimen/small_margin" />
+            <TextView android:textSize="@dimen/large_text" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/accept" android:background="@drawable/diaglue_btn_up" android:layout_width="140.0dip" android:layout_height="35.0dip" android:text="@string/accept" android:layout_weight="1.0" android:textAlignment="center" android:layout_marginStart="@dimen/small_margin" android:layout_marginEnd="@dimen/large_margin" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

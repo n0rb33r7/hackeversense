@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/box_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/header_section" android:padding="@dimen/event_box_text_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Widget.Holo.Button.Borderless">
+        <TextView android:textSize="@dimen/large_text" android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/demonstration" android:layout_toStartOf="@id/arrowOpenClose" />
+        <ImageView android:id="@id/arrowOpenClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_table_close" android:layout_centerVertical="true" android:layout_marginStart="@dimen/box_margin" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/body_section" android:background="@android:color/white" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <RelativeLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/event_box_text_margin" android:paddingEnd="@dimen/event_box_text_margin" style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:textSize="@dimen/large_text" android:textColor="@android:color/black" android:id="@id/vibrationText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vibration" android:layout_centerVertical="true" android:layout_toStartOf="@id/vibrationLayout" android:layout_alignParentStart="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/vibrationLayout" android:background="@drawable/rounded_corner_filled_blue" android:layout_width="120.0dip" android:layout_height="48.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <TextView android:textSize="@dimen/large_text" android:textColor="@color/graph_white" android:id="@id/vibration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/demo" style="@android:style/Widget.Holo.Button.Borderless" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

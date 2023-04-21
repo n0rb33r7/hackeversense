@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/glucoseTrendLayout" android:background="@color/widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/widget_margin_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_trend" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+    <TextView android:textSize="@dimen/widget_large_text" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_glucose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/widget_margin_small" android:paddingEnd="@dimen/widget_margin_small" />
+    <TextView android:textSize="@dimen/widget_small_text" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/widget_margin_extra_small" android:maxLines="1" />
+</LinearLayout>
